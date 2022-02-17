@@ -109,7 +109,7 @@ local function on_filetype()
   buf("n", "EvalFile", cfg("eval_file"), "conjure.eval", "file")
   buf("n", "EvalBuf", cfg("eval_buf"), "conjure.eval", "buf")
   buf("v", "EvalVisual", cfg("eval_visual"), "conjure.eval", "selection")
-  buf("n", "DocWord", cfg("doc_word"), "conjure.eval", "doc-word")
+  -- buf("n", "DocWord", cfg("doc_word"), "conjure.eval", "doc-word")
   buf("n", "DefWord", cfg("def_word"), "conjure.eval", "def-word")
   do
     local fn_name = config["get-in"]({"completion", "omnifunc"})
